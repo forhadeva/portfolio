@@ -11,7 +11,15 @@
 </head>
 
 <body>
+    <div class="sidebar">
+        <a href="#home" class="sidebar-item active" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="#skills" class="sidebar-item" title="Skills"><i class="fa-solid fa-gear"></i></a>
+        <a href="#projects" class="sidebar-item" title="Projects"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="#contact" class="sidebar-item" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
     <header class="header">
+
         <a href="#home" class="logo">For<span class="logo-highlight">had</span></a>
 
         <div id="menu-icon">
@@ -94,77 +102,109 @@
 
     <section id="skills" class="skills reveal fade-up">
         <div class="skills-container">
-            <h2>Skills</h2>
-            <p>I specialize in creating efficient, high-performance web solutions and visually stunning designs.</p>
-            <div class="skills-wrapper">
+            <div class="skills-visual">
+                <div class="robotic-arm-container">
+                    <img src="img/skills-robotic-arm.png" alt="Robotic Arm Illustration">
+                </div>
+                <div class="floating-icons">
+                    <div class="floating-icon icon-1"><i class="fa-solid fa-code"></i></div>
+                    <div class="floating-icon icon-2"><i class="fa-brands fa-python"></i></div>
+                    <div class="floating-icon icon-3"><i class="fa-solid fa-credit-card"></i></div>
+                    <div class="floating-icon icon-4"><i class="fa-solid fa-database"></i></div>
+                </div>
+
+            </div>
+
+            <div class="skills-content">
+                <h2>My <span class="purple-text">Skills</span></h2>
+                <p>I'm a passionate web developer with over 2 years of experience creating modern, responsive web
+                    applications. I specialize in frontend development using cutting-edge technologies to deliver
+                    exceptional user experiences.</p>
+
                 <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="progress-container">
-                            <svg>
-                                <circle cx="75" cy="75" r="70" fill="none"></circle>
-                                <circle cx="75" cy="75" r="70" fill="none" class="progress-bar"
-                                    style="--target-offset: 95;"></circle>
-                            </svg>
-                            <span class="progress-text">95%</span>
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-code"></i> Django</span>
+                            <span class="skill-percentage">95%</span>
                         </div>
-                        <h3>Web Development</h3>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="--target-width: 95%;"></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="progress-container">
-                            <svg>
-                                <circle cx="75" cy="75" r="70" fill="none"></circle>
-                                <circle cx="75" cy="75" r="70" fill="none" class="progress-bar"
-                                    style="--target-offset: 80;"></circle>
-                            </svg>
-                            <span class="progress-text">80%</span>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-percentage">92%</span>
                         </div>
-                        <h3>Brand Identity</h3>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="--target-width: 92%;"></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="progress-container">
-                            <svg>
-                                <circle cx="75" cy="75" r="70" fill="none"></circle>
-                                <circle cx="75" cy="75" r="70" fill="none" class="progress-bar"
-                                    style="--target-offset: 90;"></circle>
-                            </svg>
-                            <span class="progress-text">90%</span>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="skill-percentage">88%</span>
                         </div>
-                        <h3>Logo Design</h3>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="--target-width: 88%;"></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="progress-container">
-                            <svg>
-                                <circle cx="75" cy="75" r="70" fill="none"></circle>
-                                <circle cx="75" cy="75" r="70" fill="none" class="progress-bar"
-                                    style="--target-offset: 85;"></circle>
-                            </svg>
-                            <span class="progress-text">85%</span>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-credit-card"></i> Stripe Integration</span>
+                            <span class="skill-percentage">90%</span>
                         </div>
-                        <h3>App Design</h3>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="--target-width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-cloud"></i> REST API</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="--target-width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-fill" style="--target-width: 85%;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="slider-controls">
-                    <div class="slider-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="slider-btn next-btn"><i class="fa-solid fa-chevron-right"></i></div>
+
+                <div class="skills-cta reveal fade-up delay-6">
+                    <a href="#projects" class="btn">View My Projects <i class="fa-solid fa-briefcase"></i></a>
+                    <a href="https://wa.me/8801973885957?text=Hello!%20I'm%20interested%20in%20hiring%20you."
+                        target="_blank" class="btn contact-btn">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
                 </div>
+
             </div>
         </div>
     </section>
 
+
     <section id="projects" class="projects reveal fade-up">
         <div class="projects-header">
             <h2>I Make Incredible <span class="purple-text">Projects</span></h2>
+            <p>A collection of my most recent work, ranging from complex web applications to stunning UI/UX designs.
+                Each project is built with performance, scalability, and user experience in mind.</p>
         </div>
-        <div class="projects-wrapper">
-            <div class="projects-list" id="projects-list-container">
-                <!-- Projects will be rendered here dynamically -->
-            </div>
-            <div class="project-slider-controls">
-                <div class="slider-btn proj-prev-btn"><i class="fa-solid fa-chevron-left"></i></div>
-                <div class="slider-btn proj-next-btn"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
+        <div id="projects-grid" class="projects-grid">
+            <!-- Projects will be rendered here dynamically -->
         </div>
     </section>
+
 
     <section id="contact" class="contact reveal fade-up">
         <div class="contact-container">
@@ -256,42 +296,56 @@
 
         // Render Projects from Firebase
         async function renderProjects() {
-            const container = document.getElementById('projects-list-container');
+            const container = document.getElementById('projects-grid');
             if (!container) return;
             try {
                 const querySnapshot = await db.collection("projects").get();
-                const projects = [];
+                const projectsList = [];
                 querySnapshot.forEach((doc) => {
-                    projects.push({ id: doc.id, ...doc.data() });
+                    projectsList.push({ id: doc.id, ...doc.data() });
                 });
-                if (projects.length === 0) {
+                if (projectsList.length === 0) {
                     container.innerHTML = "<p style='color: white;'>No projects found.</p>";
                     return;
                 }
-                container.innerHTML = projects.map(project => `
-                    <a href="${project.link || '#'}" target="_blank" class="project-card-link" style="text-decoration: none; color: inherit;">
-                        <div class="project-card">
-                            <div class="project-top">
-                                <span class="project-num">${project.num || '01'}</span>
-                                <span class="project-cat">${project.category}</span>
-                            </div>
-                            <div class="project-info">
-                                <h3>${project.title}</h3>
-                                <div class="tech-used">
-                                    <p>Technologies used</p>
-                                    <span class="tech-list">${project.technologies}</span>
-                                </div>
-                            </div>
-                            <div class="project-img">
-                                <img src="${project.image}" alt="${project.title}">
+                container.innerHTML = projectsList.map(project => {
+                    const techArray = project.technologies.split(',').map(t => t.trim());
+                    return `
+                    <div class="project-card reveal">
+                        <div class="project-top">
+                            <span class="project-cat">${project.category}</span>
+                            <span class="project-num">${project.num || '01'}</span>
+                        </div>
+                        <div class="project-img">
+                            <img src="${project.image}" alt="${project.title}">
+                        </div>
+                        <div class="project-info">
+                            <h3>${project.title}</h3>
+                            <div class="tech-used">
+                                ${techArray.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
                             </div>
                         </div>
-                    </a>
-                `).join('');
+                        <div class="project-actions">
+                            <a href="${project.link || '#'}" target="_blank" class="action-btn demo-btn">
+                                View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                `}).join('');
+
+                // Re-observe new elements
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) entry.target.classList.add('show');
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.project-card.reveal').forEach(el => observer.observe(el));
+
             } catch (error) {
                 console.error("Error fetching projects: ", error);
             }
         }
+
 
         // Contact Form Logic
         const contactForm = document.getElementById('contactForm');
@@ -327,6 +381,8 @@
         document.addEventListener("DOMContentLoaded", function () {
             setTimeout(type, 1000);
             renderProjects();
+            trackVisit();
+
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -335,18 +391,8 @@
             }, { threshold: 0.1 });
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-            document.querySelector('.next-btn')?.addEventListener('click', () => {
-                document.querySelector('.skills-list').scrollBy({ left: 300, behavior: 'smooth' });
-            });
-            document.querySelector('.prev-btn')?.addEventListener('click', () => {
-                document.querySelector('.skills-list').scrollBy({ left: -300, behavior: 'smooth' });
-            });
-            document.querySelector('.proj-next-btn')?.addEventListener('click', () => {
-                document.querySelector('.projects-list').scrollBy({ left: 430, behavior: 'smooth' });
-            });
-            document.querySelector('.proj-prev-btn')?.addEventListener('click', () => {
-                document.querySelector('.projects-list').scrollBy({ left: -430, behavior: 'smooth' });
-            });
+
+
 
             // Mobile Menu Toggle
             const menuIcon = document.querySelector('#menu-icon');
@@ -364,7 +410,28 @@
 
                 menuIcon.classList.remove('active');
                 navbar.classList.remove('active');
+
+                // Sidebar Active Link Update
+                const sections = document.querySelectorAll('section');
+                const sidebarItems = document.querySelectorAll('.sidebar-item');
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop - 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                sidebarItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href').slice(1) === current) {
+                        item.classList.add('active');
+                    }
+                });
             };
+
 
             // Toast Close Listener
             const toastClose = document.querySelector(".toast .close");
@@ -409,6 +476,59 @@
                 progress.classList.remove("active");
             }, 5300);
         }
+
+        // Visitor Tracking & Notification System (EmailJS + Firestore)
+        async function trackVisit() {
+            // Only track once per session to avoid spam
+            if (sessionStorage.getItem('visit_logged')) return;
+
+            try {
+                // 1. Get visitor IP address
+                const ipResponse = await fetch('https://api.ipify.org?format=json');
+                const ipData = await ipResponse.json();
+                const visitorIp = ipData.ip;
+
+                // 2. Detect Device Type & User Agent
+                const userAgent = navigator.userAgent;
+                let deviceType = "Desktop";
+                if (/Mobi|Android/i.test(userAgent)) deviceType = "Mobile";
+                else if (/Tablet|iPad/i.test(userAgent)) deviceType = "Tablet";
+
+                const now = new Date();
+                const visitTime = now.toLocaleString();
+
+                // 3. Log to Firestore
+                if (typeof db !== 'undefined') {
+                    await db.collection("portfolio_visits").add({
+                        ip_address: visitorIp,
+                        device_type: deviceType,
+                        user_agent: userAgent,
+                        visited_at: firebase.firestore.FieldValue.serverTimestamp(),
+                        time_string: visitTime
+                    });
+                }
+
+                // 4. Send Email Notification via EmailJS
+                // Initialize EmailJS with your Public Key
+                emailjs.init("ECS-RIEhTz96IY7-U");
+
+                const templateParams = {
+                    ip_address: visitorIp,
+                    device_type: deviceType,
+                    user_agent: userAgent,
+                    time: visitTime
+                };
+
+                await emailjs.send("service_vuc2j3t", "template_0ehy4jr", templateParams);
+
+                console.log("✅ Visitor log and notification sent!");
+                sessionStorage.setItem('visit_logged', 'true');
+
+            } catch (error) {
+                console.error("❌ Visitor tracking failed:", error);
+            }
+        }
+
     </script>
 
     <!-- Custom Toast Notification -->
@@ -433,6 +553,10 @@
             </clipPath>
         </defs>
     </svg>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
+
 
 </html>
